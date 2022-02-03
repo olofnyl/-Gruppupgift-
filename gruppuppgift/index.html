@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">MyWebsite</div>
+        <a href="#" class="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#welcome-section">Home</a></li>
+                <li><a href="#gallery-section">Gallery</a></li>
+                <li><a href="#service-section">Services</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="welcome-section">
+        <img src="./img/gallery-header.jpg" alt="welcome-image">
+    </section>
+
+    <section id="gallery-section">
+        <div class="gallery">
+            <img onclick="openGalleryModal()" src="./img/art1.jpg"  class="gallery-image" alt="cover-art">
+            <img onclick="openGalleryModal()" src="./img/art2.jpg"  class="gallery-image" alt="cover-art">
+            <img onclick="openGalleryModal()" src="./img/art3.jpg"  class="gallery-image" alt="cover-art">
+            <img onclick="openGalleryModal()" src="./img/art4.jpg"  class="gallery-image" alt="cover-art">
+            <img onclick="openGalleryModal()" src="./img/art5.jpg"  class="gallery-image" alt="cover-art">
+            <img onclick="openGalleryModal()" src="./img/art6.jpg"  class="gallery-image" alt="cover-art">
+            <img onclick="openGalleryModal()" src="./img/art8.jpg"  class="gallery-image" alt="cover-art">
+            <img onclick="openGalleryModal()" src="./img/art9.jpg"  class="gallery-image" alt="cover-art">
+            <img onclick="openGalleryModal()" src="./img/art10.jpg"  class="gallery-image" alt="cover-art">
+            <img onclick="openGalleryModal()" src="./img/art11.jpg"  class="gallery-image" alt="cover-art">
+        </div>
+    </section>
+
+    <div id="gallery-modal-wrapper">
+        <section id="image-section">
+            <div class="lb-images-wrapper">
+            <main class="main-image-wrapper">
+                <img id="main-image" onclick="openLightBox(this.src)" src="">
+                <span id="lb-close-btn"onclick="closeLightBox()"><i class="fa fa-times"></i></span>
+                <span id="lb-prev-btn"><i class="fa fa-chevron-left"></i></span>
+                <span id="lb-next-btn"><i class="fa fa-chevron-right"></i></span>
+            </main>
+            <div id="thumbnail-wrapper">
+        </section>
+    </div>
+
+    <div id="service-modal-wrapper">
+        <div class="service-modal">
+            <div class="modal-header">
+                <span onclick="closeServiceModal()"><i class="fa fa-times"></i></span>
+            </div>
+            <div id="service-modal-content">
+
+            </div>
+        </div>
+    </div>
+    <section id="service-section" class="section">
+        <article class="service-card">
+            <div class="service-card-header">
+                <img class="service-card-image" src="./img/painter1.jpg"></img>
+                <div class="service-card-overlay">
+                    <h2>Chloé Dupont</h2>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae tempus ligula. Donec lacinia nibh augue, quis faucibus metus dictum mattis.
+            Nullam laoreet varius urna eu commodo. Donec tincidunt, sapien in ornare lacinia, est enim mattis augue, at semper nisl libero</p>
+        </article>
+        <article class="service-card">
+            <div class="service-card-header">
+                <img class="service-card-image" src="./img/painter2.jpg"></img>
+                <div class="service-card-overlay">
+                    <h2>Elise Brown</h2>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae tempus ligula. Donec lacinia nibh augue, quis faucibus metus dictum mattis.
+            Nullam laoreet varius urna eu commodo. Donec tincidunt, sapien in ornare lacinia, est enim mattis augue, at semper nisl libero</p>
+        </article>
+        <article class="service-card">
+            <div class="service-card-header">
+                <img class="service-card-image" src="./img/painter3.jpg"></img>
+                <div class="service-card-overlay">
+                    <h2>George Johnson</h2>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae tempus ligula. Donec lacinia nibh augue, quis faucibus metus dictum mattis.
+            Nullam laoreet varius urna eu commodo. Donec tincidunt, sapien in ornare lacinia, est enim mattis augue, at semper nisl libero</p>
+        </article>
+    </section>
+    </div>
+
+    <footer>
+        <ul class="social-icons">
+            <li>
+                <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+            </li>
+        </ul>
+        <ul class="footer-menu">
+            <li><a href="#">Adress: ingenstans 46, XXX XX</a></li>
+            <li><a href="#">Telefon: +467XXXXXXXX</a></li>
+        </ul>
+        <p>&copy; 2022 ByMe</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
